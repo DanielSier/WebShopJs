@@ -1,0 +1,14 @@
+Ik ga een webshop maken waar ik BALLEN verkoop (zoals een basketbal).
+
+Ik ga beginnen met een navbar en de voorpagina waarbij ik een paar websites ga bezoeken voor inspiratie.
+Nadat ik klaar ben met de voorpagina maak ik de shop pagina waar de producten gaan staan en je ze in de cart kunt zetten.
+Zodra de shop klaar is maak ik de shopping cart en als je wat wilt kopen komt dat in de admin pagina te staan en in de  admin panel kun je aankopen zien en producten toevoegen.
+Daarbij komt nog een pagina waar onze locatie is en waar je in contact met ons kan komen met onze email en telefoon nummer.
+zodra je iets gekocht hebt krijg je een bedankje en wordt je weer naar de homepagina gestuurd.
+
+Functionaliteit:
+De navbar werkt.
+Alles slaat op met local storage.
+De admin pagina wordt geüpdate automatisch.
+De knoppen van de producten werken.
+de navbar is sticky.
