@@ -93,12 +93,11 @@ function updatePrijs(index, nieuwAantal) {
 }
 // hier sla je de winkelwagen op voor de adminpanel orders
 function afrekenen() {
-
     let bestelingen = JSON.parse(localStorage.getItem("bestelingen")) || [];
     const order = {
         tijd: new Date().toLocaleString(),
         products: winkelwagen,
-    }
+    };
     bestelingen.push(order);
     localStorage.setItem("bestelingen", JSON.stringify(bestelingen));
     localStorage.removeItem("winkelwagen");
