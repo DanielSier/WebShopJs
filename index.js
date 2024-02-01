@@ -14,7 +14,7 @@ if (!producten) {
         kaarten(data.slice(0, 3));
         producten = data;
         localStorage.setItem("producten", JSON.stringify(data));
-    })
+    });
 } else {
-  kaarten(producten.slice(0, 3));
+    kaarten(producten.slice(0, 3));
 }

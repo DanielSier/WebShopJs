@@ -39,9 +39,6 @@ document.addEventListener("click", (e) => {
             checkproductinwinkelwagen.aantal += 1;
             console.log("dit product is al in de winkelwagen");
         }
-
         localStorage.setItem("winkelwagen", JSON.stringify(winkelwagen));
-
     }
-
 });

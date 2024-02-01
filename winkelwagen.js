@@ -6,7 +6,6 @@ let btw = 0;
 // Functie om productkaarten te maken en weer te geven in de winkelwagen
 function kaarten(producten) {
     producten.forEach((product, index) => {
-
         const shoptemplate = document.getElementsByTagName("template")[0];
         const kaart = shoptemplate.content.cloneNode(true);
 
@@ -16,8 +15,7 @@ function kaarten(producten) {
         const aantal = kaart.getElementById("number");
         aantal.value = product.aantal;
         kaart.querySelectorAll(".col-2")[3].textContent = `€${Math.round(
-            product.price * product.aantal
-        )}`;
+            product.price * product.aantal)}`;
 
         // Voeg de kaart toe aan de winkelwagen op de pagina
         kaart.querySelectorAll(".col-3");
@@ -31,7 +29,7 @@ function kaarten(producten) {
 
                 localStorage.setItem(
                     "winkelwagen",
-                    JSON.stringify(winkelwagen)
+                    JSON.stringify(winkelwagen),
                 );
                 verwijder.closest("li").remove();
                 console.log(index);
@@ -74,7 +72,7 @@ function berekenTotaalEnBtw() {
 
     document.getElementById("btw").textContent = `btw: €${Math.round(btw)}`;
     document.getElementById(
-        "hele-bedrag"
+        "hele-bedrag",
     ).textContent = `Hele bedrag: €${Math.round(totaal + btw)}`;
 }
 
@@ -99,10 +97,9 @@ function afrekenen() {
     let bestelingen = JSON.parse(localStorage.getItem("bestelingen")) || [];
     const order = {
         tijd: new Date().toLocaleString(),
-        products: winkelwagen
+        products: winkelwagen,
     }
     bestelingen.push(order);
     localStorage.setItem("bestelingen", JSON.stringify(bestelingen));
     localStorage.removeItem("winkelwagen");
-
 }
