@@ -11,36 +11,36 @@ function kaarten(producten2) {
         kaart.querySelectorAll(".Prijs")[0].textContent = `€${product.price}`;
         kaart.querySelectorAll(".Edit")[0].href = `edit.html?id=${index}`;
         if (product.image) kaart.querySelectorAll("img")[0].src = product.image;
-     document.getElementById("productentemp").appendChild(kaart);
+        document.getElementById("productentemp").appendChild(kaart);
 
-     const verwijder = document.querySelectorAll(".remove")[index];
-     verwijder.addEventListener("click", () => {
-         if (index !== -1) {
-             producten2.splice(producten2.indexOf(product), 1);
+        const verwijder = document.querySelectorAll(".remove")[index];
+        verwijder.addEventListener("click", () => {
+            if (index !== -1) {
+                producten2.splice(producten2.indexOf(product), 1);
 
-             localStorage.setItem(
-                 "producten",
-                 JSON.stringify(producten2)
-             );
-             verwijder.closest("li").remove();
-
-         }
-     });
+                localStorage.setItem("producten", JSON.stringify(producten2));
+                verwijder.closest("li").remove();
+            }
+        });
     });
 }
 if (!producten) {
-    fetch('../producten.json').then(response => response.json()).then(data => {
-        kaarten(data);
-        producten = data;
-        localStorage.setItem("producten", JSON.stringify(data));
-    })
+    fetch("../producten.json")
+        .then((response) => response.json())
+        .then((data) => {
+            kaarten(data);
+            producten = data;
+            localStorage.setItem("producten", JSON.stringify(data));
+        });
 } else {
     kaarten(producten);
 }
-function reset(){
-    fetch('../producten.json').then(response => response.json()).then(data => {
-        kaarten(data);
-        producten = data;
-        localStorage.setItem("producten", JSON.stringify(data));
-    })
+function reset() {
+    fetch("../producten.json")
+        .then((response) => response.json())
+        .then((data) => {
+            kaarten(data);
+            producten = data;
+            localStorage.setItem("producten", JSON.stringify(data));
+        });
 }

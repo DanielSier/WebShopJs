@@ -5,7 +5,6 @@ bestelingen.forEach((order, index) => {
     order.products.forEach((product) => {
         totaal += product.price * product.aantal;
     });
-    
     // De template van de order pagina
     const shoptemplate = document.getElementsByTagName("template")[0];
     const kaart = shoptemplate.content.cloneNode(true);
