@@ -33,6 +33,6 @@ afbeeldingInput.addEventListener("input", function () {
         website-of-mobiele-app_87543-18055.jpg`;
     }
 });
-window.addEventListener("DOMContentLoaded", function () {
-    edit();
-});
+
+edit();
+
