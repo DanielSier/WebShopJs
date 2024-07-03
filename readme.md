@@ -1,6 +1,5 @@
 ## Informatie over het project zelf
-mijn project gaat over ballen zoals een voetbal.
-Dit is een oud project. (outdated project)
+Dit is een oud project. (outdated project).
 Gemaakt na een kwart jaar van coderen.
 
 ##  Instructies om je project lokaal te runnen
