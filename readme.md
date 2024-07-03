@@ -17,4 +17,5 @@ Er zijn 11 producten
 Je kan er producten bij toevoegen
 Je kan er producten editen
 De producten worden opgeslagen in localestorage
-De winkelwagen berekent de btw en het hele bedrag
+De winkelwagen berekent de btw en het hele bedrag# WebShopJs
+# WebShopJs
