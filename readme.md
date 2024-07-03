@@ -1,6 +1,5 @@
 ## Informatie over het project zelf
 Dit is een oud project. (outdated project).
-Gemaakt na een kwart jaar van coderen.
 
 ##  Instructies om je project lokaal te runnen
 de shop is voor fullscreen maar het kan op mobiel
